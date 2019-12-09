@@ -2,12 +2,6 @@
   <p>Hello, {{ name }}</p>
 </template>
 
-<style scoped>
-h1 {
-  color: teal;
-}
-</style>
-
 <script>
 export default {
   data () {
@@ -17,3 +11,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+h1 {
+  color: teal;
+}
+</style>
