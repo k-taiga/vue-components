@@ -11,6 +11,7 @@ export default {
   methods: {
     emitEventOne () {
       // 1つ目の引数はイベントの名前
+      // $emitは子から親へのイベントの通知
       this.$emit('event-one')
     },
     emitEventTwo () {
