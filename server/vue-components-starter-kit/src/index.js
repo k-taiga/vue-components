@@ -12,28 +12,98 @@ import Vue from 'vue'
 
 
 // Components
-import EventButtons from './components/EventButtons.vue'
+// import EventButtons from './components/EventButtons.vue'
+
+// const app = new Vue({
+//   el: '#app',
+//   data: {
+//     arguments: []
+//   },
+//   components: {
+//     EventButtons
+//   },
+//   methods: {
+//     onEventOne () {
+//       alert('Event 1')
+//     },
+//     onEventTwo (argument) {
+//       this.arguments = []
+//       this.arguments.push(argument)
+//     },
+//     onEventThree (arg1, arg2) {
+//       this.arguments = []
+//       this.arguments.push(arg1)
+//       this.arguments.push(arg2)
+//     }
+//   }
+// })
+
+// Components
+import NumberGuess from './components/NumberGuess.vue'
 
 const app = new Vue({
   el: '#app',
   data: {
-    arguments: []
+    message: 'スタートボタンを押してください',
+    tryCountLeft: 0
   },
   components: {
-    EventButtons
+    NumberGuess
   },
   methods: {
-    onEventOne () {
-      alert('Event 1')
+    onStart (tryCountLeft) {
+      this.message = 'スタート！ 🚀'
+      this.tryCountLeft = tryCountLeft
     },
-    onEventTwo (argument) {
-      this.arguments = []
-      this.arguments.push(argument)
+    onCollect (tryCountLeft) {
+      this.message = '当たり！ 🎉'
+      this.tryCountLeft = tryCountLeft
     },
-    onEventThree (arg1, arg2) {
-      this.arguments = []
-      this.arguments.push(arg1)
-      this.arguments.push(arg2)
+     onLower (tryCountLeft) {
+      this.message = 'もっと小さいです 👇'
+      this.tryCountLeft = tryCountLeft
+    },
+    onHigher (tryCountLeft) {
+      this.message = 'もっと大きいです️ ️👆'
+      this.tryCountLeft = tryCountLeft
+    },
+    onLose () {
+      this.message = 'ゲームオーバー 👻'
+      this.tryCountLeft = tryCountLeft
     }
   }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

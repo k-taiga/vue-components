@@ -31,7 +31,7 @@ export default {
       this.tryCountLeft = 10
       // startイベント発行 引数に残回数を渡す
       this.$emit('start', this.tryCountLeft)
-    }
+    },
     guess () {
       this.tryCountLeft -= 1
 
