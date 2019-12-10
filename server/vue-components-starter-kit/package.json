@@ -7,6 +7,7 @@
     "build": "webpack",
     "serve": "http-server ./public -p 9000 -c-1",
     "start": "npm run build && npm run serve"
+
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,9 @@
     "babel-preset-env": "^1.7.0",
     "css-loader": "^1.0.0",
     "http-server": "^0.11.1",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
     "marked": "^0.7.0",
     "spectre.css": "^0.5.8",
     "vue": "^2.5.16",
