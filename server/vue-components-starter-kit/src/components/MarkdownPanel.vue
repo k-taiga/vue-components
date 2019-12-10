@@ -17,6 +17,7 @@
       </ul>
     </div>
     <div class="panel-body" v-show="activeTab === 1">
+      <!-- MarkdownEditorにv-modelでcontentを渡す -->
       <MarkdownEditor v-model="content" />
     </div>
     <div class="panel-body" v-show="activeTab === 2">
@@ -41,7 +42,7 @@ export default {
 	},
 	data () {
 		return {
-			activeTab: 1.
+			activeTab: 1,
 			content: ''
 		}
 	}

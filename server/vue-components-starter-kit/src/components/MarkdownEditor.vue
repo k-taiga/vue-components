@@ -11,6 +11,7 @@
 
 <script>
 export default {
+  // 親から受け取る
   props: {
     value: { type: String, required: true }
   },
@@ -20,6 +21,7 @@ export default {
   methods: {
     onInput ($event) {
       this.text = $event.target.value
+      // $emitで値が入力されたら親コンポーネントであるMarkdownPanelにイベント発行＆入力値を渡す
       this.$emit('input', this.text)
     }
   }
