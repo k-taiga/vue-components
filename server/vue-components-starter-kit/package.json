@@ -7,7 +7,6 @@
     "build": "webpack",
     "serve": "http-server ./public -p 9000 -c-1",
     "start": "npm run build && npm run serve"
-
   },
   "keywords": [],
   "author": "",
