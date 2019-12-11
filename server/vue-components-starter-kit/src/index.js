@@ -78,45 +78,26 @@ import Vue from 'vue'
 import './app.scss'
 
 // Components
-import MarkdownPanel from './components/MarkdownPanel.vue'
+// import MarkdownPanel from './components/MarkdownPanel.vue'
+
+// const app = new Vue({
+//   el: '#app',
+//   components: {
+//     MarkdownPanel
+//   }
+// })
+
+// Components
+import Card from "./components/Card.vue"
 
 const app = new Vue({
-  el: '#app',
+  el: "#app",
   components: {
-    MarkdownPanel
+    Card
+  },
+  methods: {
+    onClick() {
+      alert("Clicked !")
+    }
   }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
