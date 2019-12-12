@@ -75,29 +75,29 @@ import Vue from 'vue'
 // })
 
 // Style
-import './app.scss'
+import "./app.scss";
 
 // Components
-// import MarkdownPanel from './components/MarkdownPanel.vue'
-
-// const app = new Vue({
-//   el: '#app',
-//   components: {
-//     MarkdownPanel
-//   }
-// })
-
-// Components
-import Card from "./components/Card.vue"
+import MarkdownPanel from "./components/MarkdownPanel.vue";
 
 const app = new Vue({
   el: "#app",
   components: {
-    Card
-  },
-  methods: {
-    onClick() {
-      alert("Clicked !")
-    }
+    MarkdownPanel
   }
-})
+});
+
+// Components
+// import Card from "./components/Card.vue"
+
+// const app = new Vue({
+//   el: "#app",
+//   components: {
+//     Card
+//   },
+//   methods: {
+//     onClick() {
+//       alert("Clicked !")
+//     }
+//   }
+// })

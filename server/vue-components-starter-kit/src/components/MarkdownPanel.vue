@@ -2,7 +2,7 @@
   <div class="panel">
     <div class="panel-header">
       <figure class="avatar avatar-lg">
-        <img src="http://i.pravatar.cc/320" alt="">
+        <img src="https://api.adorable.io/avatars/150/vuejs.png" alt="">
       </figure>
       <div class="panel-title">User Name</div>
     </div>
@@ -17,7 +17,6 @@
       </ul>
     </div>
     <div class="panel-body" v-show="activeTab === 1">
-      <!-- MarkdownEditorにv-modelでcontentを渡す -->
       <MarkdownEditor v-model="content" />
     </div>
     <div class="panel-body" v-show="activeTab === 2">
@@ -32,19 +31,19 @@
 </template>
 
 <script>
-import MarkdownEditor from './MarkdownEditor.vue'
-import MarkdownPreview from './MarkdownPreview.vue'
+import MarkdownEditor from "./MarkdownEditor.vue";
+import MarkdownPreview from "./MarkdownPreview.vue";
 
 export default {
-	components: {
-		MarkdownEditor,
-		MarkdownPreview
-	},
-	data () {
-		return {
-			activeTab: 1,
-			content: ''
-		}
-	}
-}
+  components: {
+    MarkdownEditor,
+    MarkdownPreview
+  },
+  data() {
+    return {
+      activeTab: 1,
+      content: ""
+    };
+  }
+};
 </script>
