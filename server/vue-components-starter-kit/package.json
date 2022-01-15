@@ -20,7 +20,7 @@
     "mini-css-extract-plugin": "^0.4.1",
     "node-sass": "^4.9.2",
     "sass-loader": "^7.0.3",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "spectre.css": "^0.5.8",
     "vue": "^2.5.16",
     "vue-loader": "^15.2.6",
